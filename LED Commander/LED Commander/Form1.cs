@@ -1476,5 +1476,25 @@ namespace LED_Commander
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musDel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musUp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void musDown_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

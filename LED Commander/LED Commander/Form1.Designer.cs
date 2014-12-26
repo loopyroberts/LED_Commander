@@ -58,6 +58,9 @@
             this.revRotBut = new System.Windows.Forms.Button();
             this.rotBox = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.decVis = new System.Windows.Forms.Button();
+            this.visLab = new System.Windows.Forms.TextBox();
+            this.incVis = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.leftVol = new System.Windows.Forms.ProgressBar();
             this.rightVol = new System.Windows.Forms.ProgressBar();
@@ -90,9 +93,6 @@
             this.frameTimer = new System.Windows.Forms.Timer(this.components);
             this.rotTimer = new System.Windows.Forms.Timer(this.components);
             this.musTimer = new System.Windows.Forms.Timer(this.components);
-            this.incVis = new System.Windows.Forms.Button();
-            this.visLab = new System.Windows.Forms.TextBox();
-            this.decVis = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.backImage)).BeginInit();
             this.sysTab.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -447,6 +447,37 @@
             this.tabPage3.Text = "MP3 Visualisation";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // decVis
+            // 
+            this.decVis.Location = new System.Drawing.Point(756, 99);
+            this.decVis.Name = "decVis";
+            this.decVis.Size = new System.Drawing.Size(31, 47);
+            this.decVis.TabIndex = 21;
+            this.decVis.Text = "▼";
+            this.decVis.UseVisualStyleBackColor = true;
+            this.decVis.Click += new System.EventHandler(this.decVis_Click);
+            // 
+            // visLab
+            // 
+            this.visLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visLab.Location = new System.Drawing.Point(756, 60);
+            this.visLab.MaxLength = 3;
+            this.visLab.Name = "visLab";
+            this.visLab.Size = new System.Drawing.Size(31, 32);
+            this.visLab.TabIndex = 20;
+            this.visLab.Text = "0";
+            this.visLab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // incVis
+            // 
+            this.incVis.Location = new System.Drawing.Point(756, 6);
+            this.incVis.Name = "incVis";
+            this.incVis.Size = new System.Drawing.Size(31, 47);
+            this.incVis.TabIndex = 4;
+            this.incVis.Text = "▲";
+            this.incVis.UseVisualStyleBackColor = true;
+            this.incVis.Click += new System.EventHandler(this.incVis_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
@@ -456,6 +487,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(372, 139);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // leftVol
@@ -486,6 +518,7 @@
             this.musDown.TabIndex = 1;
             this.musDown.Text = "Move Down";
             this.musDown.UseVisualStyleBackColor = true;
+            this.musDown.Click += new System.EventHandler(this.musDown_Click);
             // 
             // musUp
             // 
@@ -495,6 +528,7 @@
             this.musUp.TabIndex = 1;
             this.musUp.Text = "Move Up";
             this.musUp.UseVisualStyleBackColor = true;
+            this.musUp.Click += new System.EventHandler(this.musUp_Click);
             // 
             // musDel
             // 
@@ -504,6 +538,7 @@
             this.musDel.TabIndex = 1;
             this.musDel.Text = "Delete Song";
             this.musDel.UseVisualStyleBackColor = true;
+            this.musDel.Click += new System.EventHandler(this.musDel_Click);
             // 
             // musAdd
             // 
@@ -776,37 +811,6 @@
             // 
             this.musTimer.Interval = 10;
             this.musTimer.Tick += new System.EventHandler(this.musTimer_Tick);
-            // 
-            // incVis
-            // 
-            this.incVis.Location = new System.Drawing.Point(756, 6);
-            this.incVis.Name = "incVis";
-            this.incVis.Size = new System.Drawing.Size(31, 47);
-            this.incVis.TabIndex = 4;
-            this.incVis.Text = "▲";
-            this.incVis.UseVisualStyleBackColor = true;
-            this.incVis.Click += new System.EventHandler(this.incVis_Click);
-            // 
-            // visLab
-            // 
-            this.visLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.visLab.Location = new System.Drawing.Point(756, 60);
-            this.visLab.MaxLength = 3;
-            this.visLab.Name = "visLab";
-            this.visLab.Size = new System.Drawing.Size(31, 32);
-            this.visLab.TabIndex = 20;
-            this.visLab.Text = "0";
-            this.visLab.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // decVis
-            // 
-            this.decVis.Location = new System.Drawing.Point(756, 99);
-            this.decVis.Name = "decVis";
-            this.decVis.Size = new System.Drawing.Size(31, 47);
-            this.decVis.TabIndex = 21;
-            this.decVis.Text = "▼";
-            this.decVis.UseVisualStyleBackColor = true;
-            this.decVis.Click += new System.EventHandler(this.decVis_Click);
             // 
             // Form1
             // 
